@@ -10,11 +10,17 @@ It uses the pico's multicore RP2040 processor to "do it faster" while being slow
 ## Commands
 ### The `w` (write) command
 `w` is literally write. When you want to add a grade to grade, you type `w [grade]`, and it adds it.
-### The `r` (read) command.
+
+### The `r` (read) command
 `r` is also literally read. When you want to read what it has stored, you can use this command.
-### The `c` (clear) command.
+
+### The `c` (clear) command
 This command has two modes. `c [index]` will clear a specific grade out of the "database", and `c` will do an atomic clear and whipe everything.
 Use this to delete/remove grades, or enter new grades all together with its atomic mode.
+
+### The `e` (execute) command
+This command just tells it to execute and calculate the grade.
+
 ### Entering multiple commands
 It can do multiple commands at once, using the `;` character is how you split them.
 For example: `w42;w88;w12;w95;w33;w71;w5;w100;w64;w27;w19;w54;e`
